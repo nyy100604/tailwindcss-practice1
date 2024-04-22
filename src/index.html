@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>布魯斯TailwindCSS教學</title>
+  </head>
+  <body class="bg-[#E5E5E5] dark:bg-black relative lg:h-screen">
+    <div class="p-4 lg:p-8">
+      <!-- header -->
+      <div
+        class="
+          mb-15
+          flex
+          justify-between
+          items-start
+          lg:max-w-[1280px] lg:mx-auto
+        "
+      >
+        <div class="dark:text-white">
+          <h1 class="text-4xl text-gray-800 dark:text-white tracking-wide">
+            Start now
+          </h1>
+          <p class="text-4xl text-gray-800 tracking-wide dark:text-white">
+            your
+            <span
+              class="
+                font-bold
+                dark:text-white
+                text-black
+                hover:tracking-widest
+                duration-300
+              "
+              >free plan.</span
+            >
+          </p>
+        </div>
+        <div class="flex flex-col-reverse items-center md:flex-row">
+          <button
+            id="toggleTheme"
+            class="
+              w-10
+              h-5
+              md:w-12 md:h-6
+              rounded-2xl
+              bg-white
+              flex
+              items-center
+              duration-300
+              focus:outline-none
+              shadow
+              mt-3
+              md:mt-0 md:mr-6
+            "
+          >
+            <div
+              id="switchToggle"
+              class="
+                w-6
+                h-6
+                md:w-7 md:h-7
+                rounded-full
+                duration-500
+                bg-yellow-500
+                -translate-x-2
+                p-1
+                text-white
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-white stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            id="login"
+            class="
+              bg-primary
+              text-white
+              py-2
+              px-4
+              rounded-sm
+              tracking-widest
+              ring-offset-2 ring-offset-gray-600 ring-primary
+              active:bg-primary-dark active:ring-4
+              duration-200
+            "
+          >
+            LOGIN
+          </button>
+        </div>
+      </div>
+
+      <!-- main -->
+
+      <div
+        class="
+          mt-8
+          lg:grid
+          lg:grid-cols-3
+          lg:justify-evenly
+          lg:gap-8
+          lg:max-w-[1280px]
+          lg:mx-auto
+        "
+      >
+        <!-- card -->
+        <div
+          class="
+            w-full
+            p-8
+            mt-8
+            bg-secondary
+            rounded-2xl
+            shadow-2xl
+            hover:scale-105
+            duration-300
+          "
+        >
+          <p class="text-3xl font-bold">
+            Free $0
+            <span class="text-base text-gray-600 font-medium">per month</span>
+          </p>
+          <div class="w-[30px] h-[3px] bg-primary mt-4"></div>
+
+          <p class="font-bold mt-8 text-lg">Plan includes:</p>
+
+          <ul id="list1" class="text-lg mb-20"></ul>
+
+          <a href="#" class="w-full mb-8 block font-bold text-center"
+            >view all the features</a
+          >
+          <button
+            class="
+              w-full
+              bg-primary
+              py-3
+              text-lg text-white
+              tracking-wide
+              rounded-lg
+            "
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <div
+          class="
+            w-full
+            p-8
+            mt-8
+            bg-primary
+            rounded-2xl
+            shadow-2xl
+            hover:scale-105
+            duration-300
+          "
+        >
+          <p class="text-3xl font-bold text-white">
+            Standard $20
+            <span class="text-base font-medium">per month</span>
+          </p>
+          <div class="w-[30px] h-[3px] bg-white mt-4"></div>
+
+          <p class="font-bold mt-8 text-lg text-white">Plan includes:</p>
+
+          <ul id="list2" class="text-lg mb-20 text-white"></ul>
+
+          <a href="#" class="w-full mb-8 block font-bold text-center text-white"
+            >view all the features</a
+          >
+          <button
+            class="
+              w-full
+              bg-white
+              py-3
+              text-lg text-black
+              tracking-wide
+              rounded-lg
+            "
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <div
+          class="
+            w-full
+            p-8
+            mt-8
+            bg-secondary
+            rounded-2xl
+            shadow-2xl
+            hover:scale-105
+            duration-300
+          "
+        >
+          <p class="text-3xl font-bold">
+            Pro $90
+            <span class="text-base text-gray-600 font-medium">per month</span>
+          </p>
+          <div class="w-[30px] h-[3px] bg-primary mt-4"></div>
+
+          <p class="font-bold mt-8 text-lg">Plan includes:</p>
+
+          <ul id="list3" class="text-lg mb-20"></ul>
+
+          <a href="#" class="w-full mb-8 block font-bold text-center"
+            >view all the features</a
+          >
+          <button
+            class="
+              w-full
+              bg-primary
+              py-3
+              text-lg text-white
+              tracking-wide
+              rounded-lg
+            "
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div
+      id="modal"
+      class="
+        absolute
+        top-0
+        left-0
+        right-0
+        w-full
+        h-full
+        bg-black/70
+        flex
+        justify-center
+        items-start
+        duration-300
+        opacity-0
+        pointer-events-none
+        lg:items-center lg:h-full
+      "
+    >
+      <div
+        class="w-[90%] p-4 bg-white mt-[150px] rounded-lg lg:mt-0 lg:w-[500px]"
+      >
+        <p class="text-3xl my-4 font-medium text-center">LOGIN</p>
+        <div class="mb-8">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            class="
+              w-full
+              border-gray-300 border-2
+              h-[50px]
+              px-3
+              mt-1
+              rounded-lg
+              focus:border-primary focus:ring-primary
+            "
+          />
+        </div>
+        <div class="mb-8">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="
+              w-full
+              border-gray-300 border-2
+              h-[50px]
+              px-3
+              mt-1
+              rounded-lg
+              focus:border-primary focus:ring-primary
+            "
+          />
+        </div>
+        <div class="mb-8">
+          <label for="region">Region</label>
+          <select
+            name="region"
+            class="
+              w-full
+              border-gray-300 border-2
+              h-[50px]
+              px-3
+              mt-1
+              rounded-lg
+              focus:border-primary focus:ring-primary
+            "
+          >
+            <option value="TW">Taiwan</option>
+            <option value="SG">Singapore</option>
+          </select>
+        </div>
+
+        <div class="mb-8 flex items-center">
+          <input
+            type="checkbox"
+            name="checkbox"
+            class="mr-2 text-primary focus:ring-primary"
+          />
+          <label for="checkbox">Remember my username</label>
+        </div>
+
+        <button
+          id="close"
+          class="
+            w-full
+            bg-primary
+            py-3
+            text-lg text-white
+            tracking-wide
+            rounded-lg
+            mt-4
+          "
+        >
+          login
+        </button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
